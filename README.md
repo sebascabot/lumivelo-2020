@@ -199,7 +199,7 @@ On peut imaginer collecter sur uSD ou EMMC les données suivantes:
 Pour plus de granularité, on peut envisager la télémérie.
 
 - Accéloromètre
-- Giroscope
+- Gyroscope
 - Magnétomètre
 - Consommation énergétique
 - Statu des piles
