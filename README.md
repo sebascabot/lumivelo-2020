@@ -2,7 +2,14 @@
 
 Montréal, vendredi 5 juin
 
-But: Les dispositifs doivent fonctionner beau temps/mauvais temps, qu'il fait froid où qu'il y ait de la pluie, tout doit opérationnel et agréable à utiliser. [Strech] Pour un utilisation au délà du tours la nuit, aussi considérer le cas d'utilisation en saison hivernale.
+But: Les dispositifs doivent fonctionner beau temps/mauvais temps, qu'il fait
+froid où qu'il y ait de la pluie, tout doit opérationnel et agréable à
+utiliser. [Strech] Pour un utilisation au délà du tours la nuit, aussi
+considérer le cas d'utilisation en saison hivernale.
+
+But: On veux maximiser l'impact du "Wow! factor" pour l'ensemble des
+participant et les spectateur du tour la nuit. On veut
+minimiser les irritants pour les participants de notre groupe.
 
 ## Idées par fonctions et/ou sous-projet
 
@@ -14,8 +21,8 @@ But: Les dispositifs doivent fonctionner beau temps/mauvais temps, qu'il fait fr
 - 5. Demi-sphère en acrylique
 - 6. Ampli audio (sous-projet demi-sphere)
 - 7. Mat avec avatar/mascote
-- 8. Projection lumineuse au sol (sous-projet du mat)
-- 9. Identification des positions relatives (sous-projet du mat)
+- 8. Projection au sol
+- 9. Identification des positions relatives
 - 10. Tesla Coil (sous-projet du mat)
 - 11. Peinture fluorescente
 - 12. Identification du trajet
@@ -26,6 +33,13 @@ But: Les dispositifs doivent fonctionner beau temps/mauvais temps, qu'il fait fr
 - 17. Communication entre les cyclistes
 - 18. Collecte des données (télémétrie) (sous-projet)
 - 19. Lentille fresnelle dans le triangle du vélo
+- 20. Recouvrir les côtés des roues
+- 21. Ballon gonflé à l'helium
+- 22. Identifier le groupe Lumivélo
+- 23. Boule disco
+- 24. Feu d'artifice
+- 25. Ligne vertical vs image 2D
+- 26. Acrylique gravée au laser
 
 - 99. Interactions avec/entre modules
   - A. Interrupteur mécanique d'alimentatoin (ON/OFF)
@@ -55,8 +69,12 @@ Il faut tenir compte des éventuels manteaux, imperméables. De plus, Il ne faut
 
 En utilisatant comme roue de vélo chacun des 0 dans 2020 on peut former un logo intéressant. Une symétrie avec le double cercle des lunettes du logo papas inventeurs est même possible.
 
-Identifier si le concept est avec ou sans lumière.
-Évaluer l'utilisation de EL-Wire.
+Pour l'ajout de lumière sur le chandail considére l'utilisation de EL-WIRE. On peut les coudre.
+
+Un zone blanche ou mirroir sur le tissu pourrait être utilisé comme surface de projection.
+
+Faire participer les enfants pour créer le texte et le image à apposer sur le
+chandail ou encore l'indentification des lignes a faire avec EL-Wire.
 
 ## 2. Decoration de casque
 
@@ -116,9 +134,28 @@ Conception d'une structure avatar/mascote en fonction du thème qu'on aura chois
 Ex. Lune, Nuage, Soleil, Étoile pour objets célestes.
 
 ## 8. Projection
-Jet d'eau.
+
+Afficher une images au sol par projection, des lignes de contour ou une
+silhouette. Le projecteur peut-être installé sur le porte bagage avant par
+exemple.
+
+Une tige en hauteur qui envoie des motifs lumineux au sol. Une idée serait de
+mettre sur une pièce de tissue des payette et d'éclairer avec une LED
+puissante pour voir les reflets animé au sol.
+
+Projection sur jet d'eau. Par capilarité ou par dispersion de goutte fine, on
+forme une surface de projection avec de l'eau. L'idéal serait de récupérer
+l'eau ainsi utilisé, car le transport de l'eau est délicat.
+
+Une simple lumière sous le vélo qui éclaire intensément le sol peut apporter
+un effet de brillance intéressant au vélo, en le découpant du sol.
+
+Le corps du cycliste peut servir d'écran de projection, en particulier si le
+cycliste porte un habit tout blanc ou encore mirroir.
 
 ## 9. Identification des positions relatives (sous-projet du mat)
+
+Le vrai problème à régler est la dispersion des participants 
 
 Mesure de la distance/direction entre chacun des vélos de la flotte
 
@@ -126,13 +163,28 @@ Mesure de la distance/direction entre chacun des vélos de la flotte
 - Sync temporel parfaite des modules (un master ?)
 - Émission d'un packet de donné avec un timestamp via les ultra-son, récepteur calcule le délai. On peut tenter le coups dans le spectre des ondes audibles pour voir l'effet.
 
-L'idée d'utiliser les UltraSon ne fonctionne pas. Les petits micro/haut-parleur ultrason que nous avons permet un calcul sur une distance de 2 mètres tout au plus. C'est logique, puisque le haut-parleur est minuscule. Un grand 'transducer' UltraSon a un coût de l'ordre de 300$. De plus, la portée resterait courte, a peine plus de 100 m.
+L'idée d'utiliser les UltraSon ne fonctionne pas. Les petits
+micro/haut-parleur ultrason que nous avons permet un calcul sur une distance
+de 2 mètres tout au plus. C'est logique, puisque le haut-parleur est
+minuscule. Un grand 'transducer' UltraSon a un coût de l'ordre de 300$. De
+plus, la portée resterait courte, a peine plus de 100 m.
 
-Il semble plus facile que chaque module identifie sa position absolue, et qu'à la demande les module échange cette information afin de pouvoir déterminer les positions relatives entre les modules.
+Il semble plus facile que chaque module identifie sa position absolue, et qu'à
+la demande les modules échangent cette information afin de pouvoir déterminer les
+positions relatives entre les modules.
 
 Stratégie:
 - Module GPS Standard
 - Module communication Sans Fil (NRF24L01 ou LoRa pour plus de porté)
+
+Pour le rendu de l'information, puisque tout les vélo suivent le même trajet,
+une courte bande DEL dans le sens du cadre peut-être utilisé pour montrer si
+les autres cycliste sont devant ou derrière nous.
+
+Technologie à regarder:
+- UWB
+- VHF Direction finding
+- Radio direction finding
 
 ## 10. Tesla coil
 
@@ -142,7 +194,11 @@ Remarque: Pour avoir des portées intéressante le module ultra-son doit être p
 
 ## 11. Peinture fluorescente sur les jantes.
 
-Appliquer de la peinture fluo sur les jantes 'freins a disque requis' et les rayons. Puis, de puissantes LED sur les aubans permet de les charger lumineusement lorsque les roues tournent.
+Appliquer de la peinture fluo sur les jantes 'freins a disque requis' et les
+rayons. Puis, de puissantes LED sur les aubans permet de les charger
+lumineusement lorsque les roues tournent.
+
+Si on a pas de frein à disque, on peut insérer entre les rayon une matière pour appliquer la peinture fluo.
 
 ## 12. Identification du trajet
 
@@ -152,10 +208,12 @@ Option 2: Utilisation de la DB hotspot WiFi de Google (est-ce possible ?)
 ## 13. Lumière dans la roue
 
 Démonter les rayons et placer un disque de plastique avec moteur autour du moyeu pour activer un module POV.
-
 Thermoformation du moule plastique translucide.
-
 Pile statique au milieux de la roue, ex. autour du moyeux.
+
+Alternative plus facile a réalser, poser des disque à l'extérieur de la roue.
+Un moteur fixé sur le porte bagage avec des engrenage pour atteindre le centre du
+disque.
 
 ## 14. Lumières aux extrémitées des poignées
 
@@ -211,6 +269,52 @@ Pour plus de granularité, on peut envisager la télémérie.
 
 À quoi ressemblerait un éclairage derrière la fresnelle d'une vielle TV à projection jeté au poubelle.
 
+## 20. Recouvrir les côtés des roues
+
+Ajouter de grands pompom avec frou-frou vis-à-vis les roues pour cacher tout
+les rayons et illuminer le tout puor un effet dynamique.
+
+Dans la même optique, placer de grand disque avec LED vis-à-vis les roues et
+faire une rotation (ex. inverse) pour créer des effets lumineux indépendant de
+la rotation des roues.
+
+## 21. Ballon gonflé à l'helium
+
+Effet de hauteurs sans ajouter de poids.
+
+
+## 22. Identifier le groupe Lumivélo
+
+Écrire "Lumivélo" sur les vélo ou les casques pour identifier le groupe et publiciser le projet.
+
+Un projection sur plexi-glass graver au laser permet d'y metter beaucoup de
+détails graphiques: logo, texte, silhouette, etc.
+
+## 23. Boule disco
+
+## 24. Feu d'artifice
+
+Système pour allumer des feux de Bingale à interval régulier. Doit produire
+une chaleur très intense pour un court laps de temps afin d'allumer le feu.
+
+## 25. Ligne vertical vs image 2D
+
+Une bande DEL vertical avec un cycle pour afficher une image si on prends une
+photo avec un long temps d'exposition.
+
+On pourrait faire des flammes courte pour accommoder le temps d'exposition des
+caméra la nuit.
+
+## 26. Acrylique gravée au laser
+
+Une projection lumineuse sous une plaque d'acrylique gravée au laser, fait
+apparaitre les motifs gravés de la couleur des LED et le reste de l'acylique
+n'est pas affecté par la lumière, à l'exception des countours. L'endroit
+naturel pour placer ce montage sur le vélo est dans le triangle principale du
+cadre, ou dans les triangles des deux hauban. C'est un excellent endroit pour
+le logo des papas inventeur ou encore faire la publicité de notre bidouillage
+Lumivélo 2020. Il pourrait même y avoir un QR-Code.
+
 ## 99. Interactions avec/entre module
 
 ### 99(A) Interrupteur ON/OFF
@@ -254,6 +358,12 @@ Fonctions:
   - up to 6 addresses, or each unit can communicate with up to 6 other units at the same time
 - IR
 - ZigBee ?
+
+Dans tout les cas, il y aura des effets de synchronisation. Il faut rendre
+visible cette synchronisaiton, par exemple faire clignoter tout les vélos en
+même temps lors de la réception d'un nouvelle commande ou d'une transition
+entre effets lumineux. Un scintillement en blanc est une effet intéressant
+pour marque le moment où c'est sync.
 
 ### 99(H) Interface sur appareil mobile
 
