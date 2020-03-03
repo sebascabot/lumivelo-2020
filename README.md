@@ -40,6 +40,7 @@ minimiser les irritants pour les participants de notre groupe.
 - 24. Feu d'artifice
 - 25. Ligne vertical vs image 2D
 - 26. Acrylique gravée au laser
+- 27. Prise de photo automatique
 
 - 99. Interactions avec/entre modules
   - A. Interrupteur mécanique d'alimentatoin (ON/OFF)
@@ -314,6 +315,11 @@ naturel pour placer ce montage sur le vélo est dans le triangle principale du
 cadre, ou dans les triangles des deux hauban. C'est un excellent endroit pour
 le logo des papas inventeur ou encore faire la publicité de notre bidouillage
 Lumivélo 2020. Il pourrait même y avoir un QR-Code.
+
+## 27. Prise de photo automatique
+
+Un peu à la manière d'une "dashcam" dans une voiture, avoir une appareil photo
+monté sur le vélo qui prend des photos à interval régulier.
 
 ## 99. Interactions avec/entre module
 
